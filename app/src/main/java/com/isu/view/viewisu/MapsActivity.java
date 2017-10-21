@@ -88,7 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng gilman = new LatLng(42.029525, -93.648627);
-        mMap.addMarker(new MarkerOptions().position(gilman).title("Gilman Hall").snippet("Text Max? (319)-939-9627"));
+        mMap.addMarker(new MarkerOptions().position(gilman).title("Gilman Hall").snippet("Feel science-y? It should."));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(gilman));
         LatLng agronomy = new LatLng(42.028242, -93.642507);
         mMap.addMarker(new MarkerOptions().position(agronomy).title("Agronomy Hall").snippet("Text Nathan? (319)-827-2327"));
@@ -111,6 +111,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng liedRec = new LatLng(42.026350, -93.637990);
         mMap.addMarker(new MarkerOptions().position(liedRec).title("Lied Rec Center").snippet("Text Ryan? (319)-765-4321"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(liedRec));
+        LatLng stadium = new LatLng(42.016052, -93.635651);
+        mMap.addMarker(new MarkerOptions().position(stadium).title("Jack Trice Stadium").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(stadium));
+        LatLng howe = new LatLng(42.026797, -93.652409);
+        mMap.addMarker(new MarkerOptions().position(howe).title("Howe Hall").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(howe));
+        LatLng coover = new LatLng(42.028406, -93.651529);
+        mMap.addMarker(new MarkerOptions().position(coover).title("Coover Hall").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(coover));
+        LatLng friley = new LatLng(42.024326, -93.650757);
+        mMap.addMarker(new MarkerOptions().position(friley).title("Friley Hall").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(friley));
+        LatLng seasons = new LatLng(42.024079, -93.638218);
+        mMap.addMarker(new MarkerOptions().position(seasons).title("Seasons Dining Hall").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(seasons));
+        LatLng udcc = new LatLng(42.025187, -93.651250);
+        mMap.addMarker(new MarkerOptions().position(udcc).title("Union Drive Community Center").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(udcc));
+
+
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling

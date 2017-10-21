@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             startActivity(new Intent(getApplicationContext(), MapsActivity.class));
                         }else{
                             //display some message here
-                            Toast.makeText(MainActivity.this,"Dude something went wrong when making you narly",Toast.LENGTH_LONG).show();
+                            Toast.makeText(MainActivity.this,"Error... Please Try Again",Toast.LENGTH_LONG).show();
                         }
                         progressDialog.dismiss();
                     }
