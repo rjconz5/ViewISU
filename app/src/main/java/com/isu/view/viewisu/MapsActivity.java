@@ -88,17 +88,30 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng gilman = new LatLng(42.029525, -93.648627);
-        mMap.addMarker(new MarkerOptions().position(gilman).title("Max").snippet("Text Max? (319)-939-9627"));
+        mMap.addMarker(new MarkerOptions().position(gilman).title("Gilman Hall").snippet("Text Max? (319)-939-9627"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(gilman));
         LatLng agronomy = new LatLng(42.028242, -93.642507);
-        mMap.addMarker(new MarkerOptions().position(agronomy).title("Nathan").snippet("Text Nathan? (319)-827-2327"));
+        mMap.addMarker(new MarkerOptions().position(agronomy).title("Agronomy Hall").snippet("Text Nathan? (319)-827-2327"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(agronomy));
         LatLng memUnion = new LatLng(42.023650, -93.645959);
-        mMap.addMarker(new MarkerOptions().position(memUnion).title("Tyler").snippet("Text Tyler? (319)-123-4567"));
+        mMap.addMarker(new MarkerOptions().position(memUnion).title("Memorial Union").snippet("Text Tyler? (319)-123-4567"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(memUnion));
-        LatLng campaneil = new LatLng(42.026619, -93.646465);
-        mMap.addMarker(new MarkerOptions().position(campaneil).title("Ryan").snippet("Text Ryan? (319)-765-4321"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(campaneil));
+        LatLng campanile = new LatLng(42.026619, -93.646465);
+        mMap.addMarker(new MarkerOptions().position(campanile).title("Campanile").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(campanile));
+        LatLng lakeLaverne = new LatLng(42.023705, -93.647987);
+        mMap.addMarker(new MarkerOptions().position(lakeLaverne).title("Lake Laverne").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(lakeLaverne));
+        LatLng library = new LatLng(42.028125, -93.648814);
+        mMap.addMarker(new MarkerOptions().position(library).title("Parks Library").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(library));
+        LatLng stateGym = new LatLng(42.025076, -93.653605);
+        mMap.addMarker(new MarkerOptions().position(stateGym).title("State Gym").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(stateGym));
+        LatLng liedRec = new LatLng(42.026350, -93.637990);
+        mMap.addMarker(new MarkerOptions().position(liedRec).title("Lied Rec Center").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(liedRec));
+
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
