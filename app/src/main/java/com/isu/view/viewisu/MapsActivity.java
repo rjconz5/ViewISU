@@ -96,9 +96,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng memUnion = new LatLng(42.023650, -93.645959);
         mMap.addMarker(new MarkerOptions().position(memUnion).title("Memorial Union").snippet("Text Tyler? (319)-123-4567"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(memUnion));
-        LatLng campaneil = new LatLng(42.026619, -93.646465);
-        mMap.addMarker(new MarkerOptions().position(campaneil).title("Campaneil").snippet("Text Ryan? (319)-765-4321"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(campaneil));
+        LatLng campanile = new LatLng(42.026619, -93.646465);
+        mMap.addMarker(new MarkerOptions().position(campanile).title("Campanile").snippet("Text Ryan? (319)-765-4321"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(campanile));
         LatLng lakeLaverne = new LatLng(42.023705, -93.647987);
         mMap.addMarker(new MarkerOptions().position(lakeLaverne).title("Lake Laverne").snippet("Text Ryan? (319)-765-4321"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(lakeLaverne));
@@ -111,7 +111,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng liedRec = new LatLng(42.026350, -93.637990);
         mMap.addMarker(new MarkerOptions().position(liedRec).title("Lied Rec Center").snippet("Text Ryan? (319)-765-4321"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(liedRec));
-        
+
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
