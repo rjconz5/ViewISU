@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "50999915851",
+    "firebase_url": "https://viewisu-1508551641030.firebaseio.com",
+    "project_id": "viewisu-1508551641030",
+    "storage_bucket": "viewisu-1508551641030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50999915851:android:69f11018a4fcaf2e",
+        "android_client_info": {
+          "package_name": "com.isu.view.viewisu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50999915851-1lsm1asotvrqqlbs1rn6s1rn8jdbfuuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW9QNWbR3rRMFL9vuqV4mby-ljobmyNIM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
