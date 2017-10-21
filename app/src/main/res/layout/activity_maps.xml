@@ -11,11 +11,11 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
         android:weightSum="1">
 
         <fragment xmlns:android="http://schemas.android.com/apk/res/android"
@@ -25,22 +25,24 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            tools:context="com.mightyducklings.cpre186.cashmeoutside.MapsActivity"
-            android:layout_weight="0.88" />
+            android:layout_weight="0.88"
+            tools:context="com.mightyducklings.cpre186.cashmeoutside.MapsActivity" />
 
         <TextView
+            android:id="@+id/textViewUserEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center_horizontal"
             android:text="Large Text"
-            android:id="@+id/textViewUserEmail"
-            android:layout_gravity="center_horizontal" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <Button
+            android:id="@+id/buttonLogout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
             android:text="Logout"
-            android:id="@+id/buttonLogout"
-            android:layout_gravity="center_horizontal" />
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 </RelativeLayout>
