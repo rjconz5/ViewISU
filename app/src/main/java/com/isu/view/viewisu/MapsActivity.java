@@ -88,7 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         LatLng gilman = new LatLng(42.029525, -93.648627);
-        mMap.addMarker(new MarkerOptions().position(gilman).title("Gilman Hall").snippet("Text Max? (319)-939-9627"));
+        mMap.addMarker(new MarkerOptions().position(gilman).title("Gilman Hall").snippet("Feel science-y? It should."));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(gilman));
         LatLng agronomy = new LatLng(42.028242, -93.642507);
         mMap.addMarker(new MarkerOptions().position(agronomy).title("Agronomy Hall").snippet("Text Nathan? (319)-827-2327"));
@@ -129,6 +129,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng udcc = new LatLng(42.025187, -93.651250);
         mMap.addMarker(new MarkerOptions().position(udcc).title("Union Drive Community Center").snippet("Text Ryan? (319)-765-4321"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(udcc));
+
 
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
