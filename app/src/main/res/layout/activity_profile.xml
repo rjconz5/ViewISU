@@ -34,7 +34,8 @@
             android:layout_gravity="center_horizontal"
             android:background="@color/colorPrimary"
             android:text="Logout"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"/>
 
         <Button
             android:id="@+id/buttonMap"
@@ -42,11 +43,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="@color/colorAccent"
-            android:padding="@dimen/activity_horizontal_margin"
-            android:paddingBottom="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:padding="5dp"
             android:text="Map"
-            android:textColor="@color/colorPrimaryDark" />
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_margin="10dp"/>
 
     </LinearLayout>
 
