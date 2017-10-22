@@ -39,7 +39,8 @@
         </activity>
         <activity
             android:name="com.isu.view.viewisu.MapsActivity"
-            android:label="@string/title_activity_maps">
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

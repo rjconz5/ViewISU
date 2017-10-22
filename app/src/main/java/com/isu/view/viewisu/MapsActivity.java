@@ -51,7 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     //firebase auth object
     private FirebaseAuth firebaseAuth;
 
-    private int score;
+    private int score = 0;
     private boolean Gilman;
     private boolean Agronomy;
     private boolean MU;
@@ -100,7 +100,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Howe, Coover, Friley, Seasons, UDCC, Vermeer};
         checkbool = temp;
 
-        score = 0;
+
 
         setContentView(R.layout.activity_maps);
         //initializing firebase authentication object
@@ -190,6 +190,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng udcc = new LatLng(42.025187, -93.651250);
         mMap.addMarker(new MarkerOptions().position(udcc).title("Union Drive Community Center").snippet("+10 Points"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(udcc));
+        LatLng vermeer = new LatLng(41.997865, -93.632737);
+        mMap.addMarker(new MarkerOptions().position(vermeer).title("Vermeer").snippet("+10 Points"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(vermeer));
 
 
 
@@ -352,7 +355,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
         for(int i = 0; i < 15; i++){
-            if(checkpoints[i].distanceTo(Person) < 40){
+            if(checkpoints[i].distanceTo(Person) < 20){
                 if(checkbool[i]){
                     checkbool[i] = false;
                     score += 10;
@@ -360,7 +363,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             }
         }
-        Toast.makeText(this, String.valueOf(score), Toast.LENGTH_LONG).show();
+
 
 
 
