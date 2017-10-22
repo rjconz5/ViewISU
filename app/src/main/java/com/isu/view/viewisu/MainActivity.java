@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -98,6 +100,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             finish();
                             //open the map when we register
                             startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+                            String user_id = firebaseAuth.getCurrentUser().getUid();
+                            DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("path").child("users").child(user_id);
+                            current_user_db.setValue(true);
                         }else{
                             //display some message here
                             Toast.makeText(MainActivity.this,"Error... Please Try Again",Toast.LENGTH_LONG).show();
